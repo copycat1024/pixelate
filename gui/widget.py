@@ -13,6 +13,7 @@ class Widget:
 
             self.tk.bind('<Enter>', self.on_enter)
             self.tk.bind('<Leave>', self.on_leave)
+            self.tk.bind('<Motion>', self.on_move)
         else:
             self.tk = tk_class()
 
@@ -37,4 +38,7 @@ class Widget:
         pass
 
     def on_leave(self, event):
+        pass
+
+    def on_move(self, event):
         pass

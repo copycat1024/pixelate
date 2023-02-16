@@ -17,6 +17,10 @@ class Sprite:
     def __init__(self, w=16, h=32):
         self.image = PhotoImage(width=w, height=h)
 
+        for x in range(0, 16):
+            for y in range(0, 32):
+                self[x, y] = '#000'
+
     def __setitem__(self, i, value):
         self.image.put(value, i)
 
